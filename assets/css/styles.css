@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --blue: hsl(219, 85%, 26%);
+    --lightBlue2: hsl(205, 33%, 90%); 
+    --grayBlue: hsl(219, 14%, 63%);
+    --DarkGrayishBlue: hsl(219, 12%, 42%);
+    --borderRadius: 25px; 
+    --standardSpacing: 1em; 
+    --largeSpacing: 2em;
+}
 /* reset template */
 * {
     box-sizing: border-box;
@@ -8,6 +19,7 @@
 
 body {
     min-height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 a {
@@ -44,4 +56,36 @@ button,
 input,
 form {
     font: inherit;
+}
+
+/* main styling */
+
+.bodyContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: var(--DarkGrayishBlue);
+}
+
+.mainContainer {
+    background-color: var(--grayBlue);
+    border-radius: var(--borderRadius);
+    padding: var(--largeSpacing);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.377);
+    height: fit-content;
+    min-width: 75vw;
+}
+
+.text h1 {
+    color: var(--lightBlue2);
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.text p {
+    color: var(--lightBlue2);
+    font-size: 1rem;
+    text-align: left;
 }
